@@ -49,8 +49,10 @@ dependencies {
     implementation(libs.androidx.lifecycle.livedata)
     implementation(libs.room.runtime)
     implementation(libs.room.ktx)
+    implementation(libs.androidx.recycle)
+    implementation(libs.androidx.cardview)
     ksp(libs.room.compiler)
-    testImplementation(libs.junit)
+        testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
 }
