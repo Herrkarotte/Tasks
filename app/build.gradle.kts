@@ -2,6 +2,7 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.ksp)
+    alias(libs.plugins.safeargs)
 }
 
 android {
@@ -51,8 +52,9 @@ dependencies {
     implementation(libs.room.ktx)
     implementation(libs.androidx.recycle)
     implementation(libs.androidx.cardview)
+    implementation(libs.navigation)
     ksp(libs.room.compiler)
-        testImplementation(libs.junit)
+    testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
 }
